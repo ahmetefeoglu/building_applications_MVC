@@ -1,0 +1,39 @@
+body {
+  background: #5bccb3;
+  font: 16px normal sans-serif;
+}
+main {
+
+  width: 100%;
+}
+
+div {
+  background: #fff;
+  box-sizing: border-box;
+  width: 450px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px 20px 20px 20px;
+  
+}
+
+h1 {
+  text-align: center;
+  color: #cc183e;
+  font-size: 36px;
+}
+
+
+input {
+  display: block;
+  width: 100%;
+  padding: 5px 3px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+a {
+  color: blue;
+  font-size: 18px;
+}
+

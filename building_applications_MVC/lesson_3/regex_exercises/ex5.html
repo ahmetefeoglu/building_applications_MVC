@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang = "en-Us">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" /> 
+    <link rel="stylesheet" type="text/css" href="splash.css">  
+  </head>
+  <body>
+    <script>
+      function passingSentence(str) {
+        var regex = /\b[A-Za-z]{5,7}\b/;
+        return regex.test(str);
+      }
+
+      console.log(passingSentence("I am the 1337est"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Backbone Collection Example</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="stylesheets/page.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src = "javascripts/underscore.js"></script>
+    <script src = "javascripts/backbone.js"></script>
+    <script src = "javascripts/handlebars.js"></script>
+  </head>
+  <body>
+    <main>
+      <div>
+        <h1>Todos</h1>
+        <input type = "text" placeholder = "What needs to be done?">
+        <a href = "">Clear Completed</a>
+      </div>
+    </main>
+    <script id = "todos" type = "text/x-handlebars">
+      <ul>
+        {{#each  todos}}
+          <a href = "" id = "todo_{{id}}">{{body}}></a>
+          
+        {{/each}}
+      </ul>
+    </script>
+    <script src = "javascripts/app.js"></script>
+  </body>
+</html>
