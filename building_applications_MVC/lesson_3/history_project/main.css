@@ -1,0 +1,78 @@
+@import url("white-space.css");
+
+body {
+  background: #282828;
+}
+
+main,header {
+  max-width: 1000px;
+  background: #fff;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 0 20px;
+
+}
+
+header {
+  padding-left: 20px;
+  margin-bottom: 20px;
+ 
+  
+}
+
+h1 {
+  font-size: 24px;
+  display: inline-block;
+  margin-right: 70px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+}
+
+
+nav {
+  display: inline-block;
+}
+
+ul li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+li a {
+  font-size: 18px;
+  text-align: none;
+  color: blue;
+}
+
+li a.chosen {
+  color: green;
+}
+
+
+
+
+
+figure {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 662px;
+  box-sizing: border-box;
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+
+}
+
+figure img {
+  display: block;
+  width: 100%;
+}
+
+article  + article{
+  display: none;
+}
+
