@@ -1,6 +1,6 @@
 {
   "name": "albums",
-  "description": "Music Collection app",
+  "description": "Music Collection",
   "main": "app.js",
   "authors": [
     "Ahmet Efeoglu <ahmetfatih325@hotmail.com>"

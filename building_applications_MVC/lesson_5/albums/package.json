@@ -1,10 +1,10 @@
 {
   "name": "albums",
   "version": "1.0.0",
-  "description": "Music Collection app",
+  "description": "Music Collection",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon public/javascripts/app.js",
+    "start": "nodemon app.js",
     "test": "jasmine-node spec --autotest --color --watch ."
   },
   "author": "",
@@ -14,6 +14,7 @@
     "grunt-bower-concat": "^1.0.0",
     "grunt-contrib-uglify": "^2.0.0",
     "jasmine-node": "^1.14.5",
+    "jquery": "^3.1.1",
     "node-static": "^0.7.9",
     "nodemon": "^1.11.0",
     "request": "^2.76.0"
