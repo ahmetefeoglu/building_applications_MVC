@@ -1,3 +1,3 @@
-var album = Backbone.Model.extend({
+var Album = Backbone.Model.extend({
 
 });
