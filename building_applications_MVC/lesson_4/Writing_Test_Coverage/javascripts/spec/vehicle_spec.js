@@ -1,25 +1,21 @@
-describe("Vehicle constructor", function() {
-
+describe("Checking Vehicle Constructor and prototype", function() {
   beforeEach(function() {
-    this.car = new Vehicle({
-      make: "Honda",
-      model: "Accord"
-    })
+    this.vehicle = new Vehicle({make: "Honda", model: "Accord"});
   });
 
-  it("sets the make and model properties when an object is passed in",function() {
-    expect(this.car.make).toEqual("Honda");
-    expect(this.car.model).toEqual("Accord");
+  it("sets the make and model properties when an object is passed in", function() {
+    expect(this.vehicle.make).toBe("Honda");
+    expect(this.vehicle.model).toBe("Accord");
   });
 
-  xit("returns a concatenated string with make and model",function() {
-    expect(this.car.toString()).toEqual("Honda Accord");
-    this.car.make = "Toyota";
-    expect(this.car.toString()).toEqual("Toyota Accord");
-
+  it("Returns an concatenated string with make and model", function() { 
+     expect(this.vehicle.toString()).toBe("Honda Accord");
+     this.vehicle.make = "Hundai";
+     expect(this.vehicle.toString()).toBe("Hundai Accord");
   });
 
-  it("returns a message when the horn is honked",function() {
-    expect(this.car.honkHorn()).toMatch(/beep/i);
-  })
+  it("returns a message when it is honked",function() {
+    expect(this.vehicle.toString()).toMatch(/[A-Za-z]+/);
+  });
+
 })

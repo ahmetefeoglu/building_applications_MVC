@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         }
       }
     },
-
+    //Takes everything in bower_components and makes them one file
     bower_concat: {
       all: {
         dest: "public/javascripts/vendor/all.js",

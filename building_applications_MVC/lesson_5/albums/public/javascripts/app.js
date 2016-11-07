@@ -10,15 +10,13 @@ var App = {
     this.albums = new Albums();
 
     this.albums.fetch({
-      success: albumsLoaded.bind(this);
+      success: this.albumsLoaded.bind(this)
     });
   },
 
 
   init:function() {
-    alert("yeahh");
     this.fetchAlbums();
-
   },
 };
 

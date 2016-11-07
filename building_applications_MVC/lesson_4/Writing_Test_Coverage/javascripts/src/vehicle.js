@@ -1,17 +1,21 @@
-function Vehicle(obj) {
-  this.make = obj.make;
-  this.model = obj.model;
-  this.toString = function() {
+function Vehicle(options) {
+  this.make = options.make;
+  this.model = options.model;
+}
+
+
+Vehicle.prototype = {
+  toString: function() {
     return this.make + " " + this.model;
-  };
+  },
 
-  this.honkHorn = function() {
+  honkHorn: function() {
     return "Beep beep!";
-  };
+  },
 
   
-  
-
 
 
 }
+
+
