@@ -4,7 +4,7 @@
     <title>Backbone Model Example</title>
     <meta charset="UTF-8" />
     
-    
+    <script src = "javascripts/handlebars.js"></script>
     <script src = "javascripts/vendor/all.js"></script>
   </head>
 
@@ -12,19 +12,27 @@
     <h1>Albums</h1>
     <ul id = "albums">
     </ul>
-    <script src = "javascripts/models/album.js"></script>
-    <script src = "javascripts/collections/albums.js"></script>
-    <script src = "javascripts/app.js"></script>
-
-    <script id = "albums_template" type = "text/x-handlebars">
+    
+    <script data-name = "albums" type = "text/x-handlebars">
       {{#each albums}}
         <li>
-          <img src = {{src}}>
-          <h1>{{title}}</h1>
-          <h2>{{artist}}</h2>
-          <p><span>{{date}}</span></p>
+          <a href = "#">
+            <img src = "{{cover}}" />
+            <h2>{{title}}</h2>
+            <h3>{{artist}}</h3>
+            <p>Released: {{date}}</p>
+          </a>
         </li>
       {{/each}}
+    </script>
+
+    <script src = "javascripts/models/album.js"></script>
+    <script src = "javascripts/collections/albums.js"></script>
+    <script src = "javascripts/views/albums.js"></script>
+    <script src = "javascripts/app.js"></script>
+
+    <script>
+      App.init();
     </script>
     
   </body>

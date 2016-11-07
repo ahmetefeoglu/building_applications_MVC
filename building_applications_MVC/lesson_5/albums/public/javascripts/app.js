@@ -1,23 +1,17 @@
 var App = {
-  
-
-  albumsLoaded: function(collection) {
-    console.log(this.albums.toJSON());
-
+  albumsLoaded: function() {
+    this.view.render();
   },
 
   fetchAlbums: function() {
     this.albums = new Albums();
-
+    this.view = new AlbumsView({collection: this.albums});
     this.albums.fetch({
       success: this.albumsLoaded.bind(this)
-    });
+    })
   },
 
-
-  init:function() {
+  init: function() {
     this.fetchAlbums();
-  },
-};
-
-App.init();
+  }
+}
