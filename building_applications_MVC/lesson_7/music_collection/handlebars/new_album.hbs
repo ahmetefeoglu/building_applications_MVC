@@ -1,0 +1,40 @@
+<div id ="new_album">
+  <form action="/albums" method="post">
+    <fieldset>
+      <dl>
+        <dt>
+          <label for = "artist_name">Artist Name:</label>
+        </dt>
+        <dd>
+          <input type="text" name="artist_name" />
+        </dd>
+        <dt>
+          <label for ="album_name">Album Name:</label>
+        </dt>
+        <dd>
+          <input type="text" name="album_name" />
+        </dd>
+        <dt>
+          <label for = "date">Release Date:</label>
+        </dt>
+        <dd>
+          <input type="date" name="date" />
+        </dd>
+        <dt>
+          <label for ="cover">Cover:</label>
+        <dd>
+          <input type="url" name="cover" />
+        </dd>
+        <dt>
+          <label for = "price">Price:</label>
+        </dt>
+        <dd>
+          <input type="text" name="price" />
+        </dd>
+      </dl>
+    </fieldset>
+    <fieldset class = "actions">
+      <input type="submit" value="Create" />
+    </fieldset>
+  </form>
+</div>

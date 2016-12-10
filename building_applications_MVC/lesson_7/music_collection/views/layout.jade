@@ -1,0 +1,28 @@
+include /_mixins
+include /_functions
+include /_cart_mock
+doctype html
+html
+  head
+    title Music Store
+    +stylesheet_link_tag("application")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Aref+Ruqaa")
+    +javascript_include_tag("vendor/all")
+    +javascript_include_tag("handlebars_templates")
+    
+  body
+    main
+
+      block content   
+    +javascript_include_tag("application")
+    +javascript_include_tag("models/album")
+    +javascript_include_tag("collections/albums")
+    +javascript_include_tag("views/album", "views/new_album", "views/index")
+    script(type="text/javascript").
+      App.albums = new Albums(!{JSON.stringify(albums)});
+    +javascript_include_tag("router")
+    block scripts
+      
+    
+
+

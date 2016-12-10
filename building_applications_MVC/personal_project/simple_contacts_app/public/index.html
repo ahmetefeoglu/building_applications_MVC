@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact List</title>
+  <meta charset="utf-8">
+  <link rel = "stylesheet" type = "text/css" href = "stylesheets/main.css">
+  <script src = "local-storage.js"></script>
+  <script src = "/javascripts/vendor/all.js"></script>
+</head>
+<body>
+  <header>
+    <h1>
+      <a href = "">Contact Manager</a>
+    </h1>
+    <p>Using Backbone.js, Localstorage, RequireJS, Handlebar and Bootstrap</p>
+  </header>
+
+  <main>
+    <nav>
+      <div class = "add_contact">
+        <a class = "add" href = "">Add Contact</a>
+      </div>
+
+      <div class = "search">
+        <input type = "text" placeholder = "Search">
+      </div>
+    </nav>
+
+    <div class = "no_contact">
+      <p>There are no contacts</p>
+      <a class = "add" href = "">Add Contact</a>
+    </div>
+
+    <div class = "contacts">
+      <h2>Your Contact List</h2>
+      <ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>Developed by Ahmet Fatih Azil</p>
+  </footer>
+
+
+  <script src="/javascripts/models/contact.js"></script>
+  <script src="/javascripts/collections/contacts.js"></script>
+  <script src="/javascripts/views/contacts.js"></script>
+  <script src = "/javascripts/app.js"></script>
+</body>
+</html>

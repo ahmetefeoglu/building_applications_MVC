@@ -1,0 +1,57 @@
+@import "whitespace-reset.css";
+body {
+  font-family: 'Aref Ruqaa', serif;
+  font-size: 16px;
+  color: #333;
+  max-width: 1200px;
+}
+main {
+  padding-left: 30px;
+}
+h1 {
+  font-size: 30px;
+  margin: 0 auto;
+  padding: 0 0 30px 0;
+}
+#new_album {
+  width: 400px;
+  margin: 0 auto;
+}
+#new_album form dt {
+  padding-bottom: 5px;
+}
+#new_album form dd {
+  padding-bottom: 10px;
+}
+#new_album form dd input[type="text"],
+#new_album form dd input[type="date"],
+#new_album form dd input[type="url"] {
+  width: 100%;
+  height: 20px;
+  border: 1px solid #00bfff;
+  border-radius: 6px;
+}
+#index ul {
+  padding: 0 0 40px 0;
+  margin: 0 0 0 -20px;
+}
+#index ul li {
+  display: inline-block;
+  width: 20%;
+  padding-right: 10px;
+  box-sizing: border-box;
+  margin-bottom: 45px;
+}
+#index ul li a {
+  display: inline-block;
+  padding: 7px 15px;
+  border: 1px solid #00bfff;
+  border-radius: 6px;
+  background: #fff;
+  color: #00bfff;
+  text-decoration: none;
+}
+#index ul li a:hover {
+  color: #fff;
+  background: #00bfff;
+}

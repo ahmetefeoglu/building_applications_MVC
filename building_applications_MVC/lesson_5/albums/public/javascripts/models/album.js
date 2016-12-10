@@ -1,6 +1,10 @@
+//You don't understand this part ask!!!!
+
 var Album = Backbone.Model.extend({
   parse: function(attrs) {
-    attrs.tracks_url = "/album" + attrs.title;
-  }
+    console.log(attrs);
+    attrs.tracks_url = "/albums/" + attrs.title;
 
-});
+    return attrs;
+  }
+})

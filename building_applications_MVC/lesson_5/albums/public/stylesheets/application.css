@@ -1,0 +1,110 @@
+@import url("whitespace-reset.css");
+
+
+body {
+  background: #92ed1a;
+  font: normal 14px "Roboto Condensed";
+
+}
+
+main {
+  background: #f6fad9;
+  max-width: 800px;
+
+  padding: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #020100;
+}
+
+#albums li {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+  padding: 0 10px 10px 0;
+  box-sizing: border-box;
+  
+}
+
+
+#albums  img {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#tracks_modal {
+  position: fixed;
+  top: 25px;
+  left:25px;
+  right: 25px;
+  bottom:25px;
+  z-index: 2;
+  padding: 25px;
+  background: #f4f5d6;
+}
+
+#tracks_modal img {
+  float: left;
+  width: 80px;
+  margin: 0 10px 10px 0;
+}
+
+#tracks_modal h2 {
+  padding-bottom: 10px;
+}
+
+#tracks_modal h3 {
+  padding-bottom: 5px;
+}
+
+#tracks_modal ol {
+  clear: both;
+  list-style: decimal inside;
+}
+
+#tracks_modal li {
+  padding: 7px 0 ;
+  border: 1px solid #a7c520;
+}
+
+#tracks_modal small {
+  float: right;
+}
+
+#tracks_modal .close {
+  float: right;
+  color: #a7c520;
+}
+
+
+#overlay {
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgba(0,0,0, .6);
+  display: none;
+}
+
+

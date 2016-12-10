@@ -1,0 +1,21 @@
+-
+  function total(a,b) {
+    return (a.price ? a.price * a.quantity : a) + b.price * b.quantity;
+  }
+
+  function format(price) {
+    return price.toFixed(2);
+  }
+
+  function getQuantity(arr) {
+    total = 0;
+    for (i = 0; i < arr.length; i++) {
+      total += arr[i].quantity;
+    }
+  }
+
+  function cart_quantity() {
+    return cart.reduce(function(a,b) {
+      return (a.quantity ? a.quantity: a) + b.quantity;
+    });
+  }
