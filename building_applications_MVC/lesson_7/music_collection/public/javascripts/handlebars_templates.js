@@ -13,11 +13,11 @@ this["JST"]["album"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":fun
     + alias4(((helper = (helper = helpers.data || (depth0 != null ? depth0.data : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"data","hash":{},"data":data}) : helper)))
     + "</p> <p>$"
     + alias4((helpers.format_price || (depth0 && depth0.format_price) || alias2).call(alias1,(depth0 != null ? depth0.price : depth0),{"name":"format_price","hash":{},"data":data}))
-    + "</p><a class = \"button\" href = \"#\">Add to Cart</a>";
+    + "</p><a class = \"button\" href = \"/albums/new\">Add to Cart</a>";
 },"useData":true});
 
 this["JST"]["index"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<h1> Music Store</h1><ul></ul><footer><a class = \"button\" href = \"#\"> Add album</a></footer>";
+    return "<h1> Music Store</h1><ul></ul><footer><a class = \"button\" href = \"/albums/new\"> Add album</a></footer>";
 },"useData":true});
 
 this["JST"]["new_album"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {

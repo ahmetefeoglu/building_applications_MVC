@@ -1,0 +1,17 @@
+h2 Create Contact
+  form(action= "/contacts" method= "post")
+    div(class="blocks")
+      label(for="name") Full name:
+      div
+        input(type="text" name= "name")
+    div(class="blocks")
+      label(for="email") Email adress:
+      div
+        input(type="email" name= "email")
+    div(class="blocks")
+      label(for="telephone") Telephone number:
+      div
+        input(type="tel" name = "telephone")
+    div(class="submission")
+      input(type="submit" value="Submit")
+      a(href="#") Cancel

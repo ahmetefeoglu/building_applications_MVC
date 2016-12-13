@@ -1,0 +1,11 @@
+nav
+    div.add_contact
+      a.add(href="/contacts/new") Add Contact
+    div.search
+      input(type="text" placeholder="Search")
+  div.no_contact
+    p There are no contacts
+    a.add(href="") Add Contact
+  div.contacts
+    h2 Your Contact List
+    ul

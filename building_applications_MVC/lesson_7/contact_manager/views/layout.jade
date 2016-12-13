@@ -4,7 +4,25 @@ html
   head
     title= title
     +stylesheet("application")
+    +javascripts_include_tag("vendor/all")
+    +javascripts_include_tag("handlebars_templates")
     <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet">
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Aref+Ruqaa")
   body
-    block content
+    header
+      h1
+        a(href="") Contact Manager
+      p Using Backbone.js, Localstorage, RequireJS, Handlebar and Bootstrap
+    main
+      block content
+    +javascripts_include_tag("application")     
+    +javascripts_include_tag("models/contact")
+    +javascripts_include_tag("collections/contacts")
+    +javascripts_include_tag("views/contact", "views/home", "views/new_contact")
+    script(type= "text/javascript").
+      
+      App.contacts = new Contacts(!{JSON.stringify(contacts)});
+      alert(App.contacts.length);
+    +javascripts_include_tag("router")
+    footer
+      p Developed by Ahmet Fatih Azil
